@@ -1,0 +1,22 @@
+﻿@page "/index2"
+@using MatBlazor
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<MatBlazor.MatDialog IsOpen="true">
+    <MatDatePicker></MatDatePicker>
+    @*<MatBlazor.MatTextField @bind-Value="MyText"></MatBlazor.MatTextField>
+    <MatSelect Label="Phone prefix" Enhanced="true" @bind-Value="MySelect">
+        @foreach (var item in MyList)
+        {
+            <MatOption Value="item">@item</MatOption>
+        }
+    </MatSelect>*@
+</MatBlazor.MatDialog>
+
+@code {
+    string MyText;
+    string MySelect;
+    List<string> MyList = new List<string> { "Item1", "Item2" };
+}
